@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Towsif Ahmed</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="profile-pic">
+            <img src="E87AC92E-9E79-4C1E-8F3A-08D3BE2594B7.jpeg" alt="Towsif Ahmed">
+        </div>
+        <h1>Towsif Ahmed</h1>
+        <p>Specialist In: 360 Degree Marketing, Product Launching, Trade Marketing, Digital Marketing Analyst, Marketing Campaign, Business Development, NPD</p>
+    </header>
+
+    <nav>
+        <button onclick="showSection('experience')">Experience</button>
+        <button onclick="showSection('achievements')">Achievements</button>
+        <button onclick="showSection('skills')">Skills</button>
+        <button onclick="showSection('contact')">Contact</button>
+    </nav>
+
+    <section id="experience" class="content-section">
+        <h2>Experience</h2>
+        <h3>Meghna Group of Industry</h3>
+        <p>Assistant Manager, Brand // October 2023 – Present</p>
+        <h3>Gemcon Group | Kazi & Kazi Tea Estate Ltd</h3>
+        <p>Senior Executive, Brand // April 2022 – October 2023</p>
+        <p>Executive, Brand // June 2019 – March 2022</p>
+    </section>
+
+    <section id="achievements" class="content-section">
+        <h2>Achievements</h2>
+        <ul>
+            <li>Ever Highest sale (Jan-Feb ‘24)</li>
+            <li>Established Brand Asset “PositiviTea Season”</li>
+            <li>Successful Marketing Campaigns</li>
+            <li>Successful Trade & CP Program</li>
+            <li>Project Management</li>
+            <li>Research</li>
+        </ul>
+    </section>
+
+    <section id="skills" class="content-section">
+        <h2>Skills</h2>
+        <h3>Hard Skills</h3>
+        <ul>
+            <li>Marketing Campaign Management</li>
+            <li>Database Management</li>
+            <li>Content Marketing</li>
+            <li>Digital Marketing</li>
+        </ul>
+        <h3>Computer Skills</h3>
+        <ul>
+            <li>Essential Excel course on Coursera</li>
+            <li>Google spreadsheet online Data Analysis</li>
+            <li>Adobe Photoshop, Illustrator, Premier (Ps, Ai, Pr)</li>
+            <li>Meta Business Manager</li>
+        </ul>
+        <h3>Personal Skills</h3>
+        <ul>
+            <li>Analytical Skills</li>
+            <li>Communication Skills</li>
+            <li>Negotiation Skill</li>
+            <li>Presentation Skills</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="content-section">
+        <h2>Contact</h2>
+        <p>93/D, Azimpur Government Officers Quarter, Dhaka-1205</p>
+        <p>Phone: +88 01919430360</p>
+        <p>Email: towfahmed55@gmail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/towsif-ahmed1" target="_blank">linkedin.com/in/towsif-ahmed1</a></p>
+    </section>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+        // Show the first section by default
+        document.addEventListener('DOMContentLoaded', () => {
+            showSection('experience');
+        });
+    </script>
+</body>
+</html>
